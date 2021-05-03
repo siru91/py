@@ -1,17 +1,45 @@
 body{    
-    margin: 0;    
+    margin: 0;        
 }
 
 h1, h3, p{
     margin: 0;
 }
 
-.container{    
-    display: flex;
-    height: 100vh;
-    font-size: 0;
+h4 {
+    font-size: 2em;
+}
+
+.main-container{  
+    display:flex;      
+    height: 300vh;
+    
+    padding-left: 15%;
+    padding-right: 15%;
+
     align-items: stretch;
     outline-style: solid; outline-color: blue; outline-width: 2px;
     background-color: cornsilk;
 }
 
+.menu {
+    display: none;
+}
+
+.item-container {
+    flex-direction: column;
+}
+
+.horizontal-container {
+    display: flex;
+}
+
+.item {
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+#project-mapping-mov {
+    width: 70vh;
+    height: 40vh;
+}
