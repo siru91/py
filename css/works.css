@@ -37,9 +37,15 @@ h4 {
 .item {
     flex-direction: row;
     flex-grow: 1;
+    
+}
+
+.item:hover { 
+    background-color: gray;
+    transition: ease-in 0.3s;
 }
 
 #project-mapping-mov {
-    width: 70vh;
-    height: 40vh;
+    width: 15vh;
+    
 }

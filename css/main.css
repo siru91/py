@@ -24,9 +24,16 @@ h3{
     color: #585858;
 }
 
-#link-blog {
-    margin-left: 30px;
-    display: none;
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: teal;
+    text-underline-position: unset;
+}
+a:hover {
+    color: rgb(255, 196, 0);
 }
 
 p{
@@ -48,4 +55,16 @@ p{
     display: flex;
     flex-wrap: wrap;    
     justify-content: center;
+}
+
+.menu-btn {
+    margin-top: 2em;    
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#link-blog {    
+    margin-left: 30px;
+    /* display: none; */
 }
