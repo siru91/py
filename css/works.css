@@ -10,42 +10,87 @@ h4 {
     font-size: 2em;
 }
 
-.main-container{  
-    display:flex;      
-    height: 300vh;
-    
-    padding-left: 15%;
-    padding-right: 15%;
+a {
+    text-decoration: none;
+    color: white;
+}
 
-    align-items: stretch;
-    outline-style: solid; outline-color: blue; outline-width: 2px;
-    background-color: cornsilk;
+footer, header {
+    position: fixed;
+    background-color: rgb(70, 70, 70);
+    padding: 3% 10% 6% 10%;    
+    color: white;
+    font-size: 2em;
+}
+
+header {
+    left: 0%;
+    right: 10%;
+    top: 0%;
+    z-index: 5;
+}
+
+header .py{
+    position: absolute;
+    display: block;
+    color: teal;    
+}
+header .works {
+    position: absolute;
+    display: block;
+    left: auto;
+    right: 10px;
+    color: teal; 
+}
+
+.main-container{  
+    /* display:flex;       */
+    height: 3000px;    
+    padding-top: 200px;
+    padding-left: 15%;
+    padding-right: 15%;    
+    background-color: rgb(70, 70, 70);
 }
 
 .menu {
     display: none;
 }
 
-.item-container {
-    flex-direction: column;
+.contents {
+    height: 1000px;
 }
 
-.horizontal-container {
-    display: flex;
+.item-container .item-cell {
+    margin: 0;
+    float: left;
+    width: 50%;
 }
 
-.item {
-    flex-direction: row;
-    flex-grow: 1;
-    
+.item-container .item-cell:nth-child(odd) {
+    padding-right: 3%;
+}
+
+.item-container .item-cell:nth-child(even) {
+    padding-left: 3%;
+}
+
+.item-cell {   
+    position: relative;
+    display: block;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+
+.item-thumb {
+    width: 100%;
+}
+
+.caption {
+    display: block;
+
 }
 
 .item:hover { 
     background-color: gray;
     transition: ease-in 0.3s;
-}
-
-#project-mapping-mov {
-    width: 15vh;
-    
 }
