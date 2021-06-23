@@ -43,6 +43,13 @@ header .works {
     color: teal; 
 }
 
+.item-cell>strong {    
+    font-size: 1.7rem;
+}
+.item-cell>em {    
+    font-size: 1.1rem;
+}
+
 .main-container{  
     /* display:flex;       */
     height: 3000px;    
@@ -61,7 +68,7 @@ header .works {
 }
 
 .item-container .item-cell {
-    margin: 0;
+    margin-bottom: 50px;
     float: left;
     width: 50%;
 }
