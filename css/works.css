@@ -33,7 +33,7 @@ a {
 #header>.py, #header>.works{
     color: white; 
     max-width: 35%;
-    padding-left: 15%;
+    padding-left: 17%;
     display: block;
     flex: 1;
 }
@@ -54,8 +54,8 @@ a {
     /* display:flex;       */
     height: 3000px;    
     padding-top: 200px;
-    padding-left: 15%;
-    padding-right: 15%;    
+    padding-left: 17%;
+    padding-right: 17%;    
     background-color: white;
 }
 
@@ -67,19 +67,35 @@ a {
     height: 1000px;
 }
 
-.item-container .item-cell {
+.category {
+    float: left;
+    width: 100%;
+}
+
+.item-container .category .item-cell {
     margin-bottom: 50px;
     float: left;
     width: 50%;
 }
 
-.item-container .item-cell:nth-child(odd) {
-    padding-right: 3%;
+.item-container .category .item-cell:nth-child(n) {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
 }
 
-.item-container .item-cell:nth-child(even) {
-    padding-left: 3%;
+.category-title-bg {
+    width: 30%;
+    background-color: black;
+    
 }
+.category-title {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-inline-start: 1rem;
+    padding-block-end: 0.2rem;
+    margin-bottom: 8px;
+    color: white;
+}   
 
 .item-cell {   
     filter: grayscale(100%);
@@ -87,11 +103,13 @@ a {
     display: block;
     word-wrap: break-word;
     box-sizing: border-box;
+    background-color: white;
+
+    transition: 0.5s;
 }
 
 .item-cell:hover {
     filter: grayscale(0%);
-    transition: filter 0.5s;
 }
 
 .item-thumb {

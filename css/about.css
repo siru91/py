@@ -1,69 +1,115 @@
-/* html {
-    overflow: hidden;
-} */
-
-body {
-    box-sizing: content-box;
-    margin: 1vw 1vw 1vw 1vw;
-    width: 98vw;
-    height: 96vh;
-    background-color: white;
-    outline: 5vh solid black;
-    /* outline-style: solid; outline-color: rgb(0, 39, 145); outline-width: 5vh; */
+body{    
+    margin: 0;  
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
-h1 {
-    text-align: center;
+h1, h3, p{
     margin: 0;
-    margin-bottom: 1vh;
-    font-size: 5em;
-    color: black;
 }
 
-h3{
-    margin-top: 4em;    
-    font-size: 1.5rem;
-    display: inline;
-    color: #585858;
+h4 {
+    font-size: 2em;
 }
 
 a {
     text-decoration: none;
-    color: teal;
+    color: black;
 }
 
-a:visited {
-    color: teal;
-    text-underline-position: unset;
-}
-a:hover {
-    color: rgb(255, 196, 0);
+#header {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    box-sizing: content-box;
+    padding: 4vh 0 4vh 0; 
+    
+
+    z-index: 5;
+    transition: 0.2s;
 }
 
-p{
-    margin:0
+#header>.py, #header>.works{
+    color: white; 
+    max-width: 35%;
+    padding-left: 15%;
+    display: block;
+    flex: 1;
 }
 
-.container{         
-    position: absolute;
-    top: 30%;
-    left: 50%;  
+#header>.divider {
+    flex: 0.5;
 }
 
-.contents{
+.item-cell>strong {    
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.item-cell>em {    
+    font-size: 1.1rem;
+}
+
+.main-container{  
+    /* display:flex;       */
+    height: 3000px;    
+    padding-top: 200px;
+    padding-left: 15%;
+    padding-right: 15%;    
+    background-color: white;
+}
+
+.menu {
+    display: none;
+}
+
+.contents {
+    height: 1000px;
+}
+
+.item-container .item-cell {
+    margin-bottom: 50px;
+    float: left;
+    width: 50%;
+}
+
+.item-container .item-cell:nth-child(odd) {
+    padding-right: 3%;
+}
+
+.item-container .item-cell:nth-child(even) {
+    padding-left: 3%;
+}
+
+.item-cell {   
+    filter: grayscale(100%);
     position: relative;
-    left: -50%;
+    display: block;
+    word-wrap: break-word;
+    box-sizing: border-box;
 }
 
-.link-container {
-    display: flex;
-    flex-wrap: wrap;    
-    justify-content: center;
+.item-cell:hover {
+    filter: grayscale(0%);
+    transition: filter 0.5s;
 }
 
-.menu-btn {
-    margin: 2vh 2vh;  
-    font-size: 1.5rem;
-    font-weight: bold;
-    display: inline-block;
+.item-thumb {
+    border: 2px solid black;
+    width: 100%;
+}
+/* 
+.item-thumb:hover {
+    clip-path: inset(5% 5% 5% 5%);
+    transition: clip-path;
+} */
+
+.caption {
+    display: block;
+
+}
+
+.item:hover { 
+    background-color: gray;
+    transition: ease-in 0.3s;
 }

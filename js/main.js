@@ -1,7 +1,22 @@
-// When the user scrolls down 50px from the top of the document, resize the header's font size
-window.onscroll = function() { scrollFunction() };
+function init() {
+  // When the user scrolls down 50px from the top of the document, resize the header's font size
+  window.onscroll = function () {
+    scrollFunction()
+  };
 
-setTitleNavigation("Works");
+  setTitleNavigation("Works");
+}
+
+function scrollFunction() {
+  var headerContainer = document.querySelector("#header");
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    headerContainer.style.fontSize = "1.7em";
+    headerContainer.style.padding = "1.5vh 1vh";
+  } else {
+    headerContainer.style.fontSize = "2em";
+    headerContainer.style.padding = "4vh 1vh";
+  }
+}
 
 function setTitleNavigation(currentPositionStr) {
   const PAGE_NAME = "Pyeong"
@@ -9,13 +24,6 @@ function setTitleNavigation(currentPositionStr) {
   headerTitle.innerHTML = `${PAGE_NAME} > ${currentPositionStr}`;
 }
 
-function scrollFunction() {
-  var headerContainer = document.querySelector("#header");
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    headerContainer.style.fontSize = "2em";
-    headerContainer.style.padding = "1vh 1vh";
-  } else {
-    headerContainer.style.fontSize = "2em";
-    headerContainer.style.padding = "4vh 1vh";
-  }
-}
+
+// INIT FUNCTION
+init();
