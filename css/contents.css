@@ -1,0 +1,90 @@
+body{    
+    margin: 0;  
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1, h3, p{
+    margin: 0;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    box-sizing: content-box;
+    padding: 4vh 0 4vh 0; 
+
+    z-index: 5;
+    transition: 0.2s;
+}
+
+#header>.py, #header>.works{
+    color: white; 
+    max-width: 35%;
+    padding-left: 17%;
+    display: block;
+    flex: 1;
+}
+
+.main-container{  
+    /* display:flex;       */
+    font-size: 1.3rem;
+    height: 3000px;    
+    padding-top: 100px;
+    padding-left: 17%;
+    padding-right: 17%;    
+    background-color: white;
+}
+
+.head-container {
+    height: 60vh;
+    padding-top: 10vh;
+    background: no-repeat center/100% url("../img/coc_head.jpg");
+    position: relative;
+}
+
+.contents.title {
+    margin-left: 17%;
+    margin-bottom: 5%;
+    position: absolute;
+    bottom: 0;
+    
+    font-size: 3rem;
+    font-weight: 800;    
+    color: white;
+}
+.holder-container {
+    display:flex;
+    margin-bottom: 30px;
+}
+
+#horizontal-mul {
+    margin-right: 200px;
+}
+
+.holder-title {
+    
+    display: inline-block;
+    font-weight: 600;
+}
+
+.holder-desc {
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+.intro-title, .body-title, .foot-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
