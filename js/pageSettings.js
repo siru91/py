@@ -1,12 +1,16 @@
+/**
+ * 전체 페이지에서 사용될 일반 세팅
+ */
+
 function init() {
   // When the user scrolls down 50px from the top of the document, resize the header's font size
   window.onscroll = function () {
     scrollFunction()
   };
 
-  setTitleNavigation("Works");
 }
 
+// 스크롤 시 헤더 메뉴 사이즈 조절
 function scrollFunction() {
   var headerContainer = document.querySelector("#header");
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -23,7 +27,6 @@ function setTitleNavigation(currentPositionStr) {
   var headerTitle = document.querySelector(".py");
   headerTitle.innerHTML = `${PAGE_NAME} > ${currentPositionStr}`;
 }
-
 
 // INIT FUNCTION
 init();

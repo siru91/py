@@ -16,6 +16,10 @@ a {
     color: black;
 }
 
+p {
+    margin-top: 10px;
+}
+
 #header {
     position: fixed;
     width: 100%;
@@ -35,6 +39,10 @@ a {
     padding-left: 17%;
     display: block;
     flex: 1;
+}
+
+.intro-holder, .body-holder, .result-holder {
+    margin-bottom: 5vh;
 }
 
 .main-container{  
@@ -66,25 +74,49 @@ a {
 }
 .holder-container {
     display:flex;
+    flex-direction: column;
     margin-bottom: 30px;
 }
 
 #horizontal-mul {
-    margin-right: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30%;
 }
 
-.holder-title {
-    
-    display: inline-block;
+.holder-title {    
     font-weight: 600;
 }
 
 .holder-desc {
-    margin-left: 10px;
+    margin-left: 1px;
     margin-right: 50px;
 }
 
-.intro-title, .body-title, .foot-title {
+.tech>.holder-desc {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.intro-title, .body-title, .result-title {
     font-size: 2rem;
     margin-bottom: 30px;
+}
+
+.tech-item {
+    font-weight: 400;
+}
+
+.tech-item.thumb {
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    margin-top: 5px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.tech-item.desc {
+    
 }
