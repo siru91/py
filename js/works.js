@@ -1,6 +1,6 @@
 function init() {
   setTitleNavigation("Works")
-  setItemIndex()
+  // setItemIndex()
 }
 
 var items = document.querySelectorAll('.category>a');

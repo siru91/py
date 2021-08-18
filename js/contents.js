@@ -1,7 +1,7 @@
 
 function init() {
 
-  setPageText(getIndex());
+  // setPageText(getIndex());
 
   setTitleNavigation("Works");
 }
@@ -20,7 +20,7 @@ function setPageText(idx) {
   var h_member = document.querySelector(".team.holder-desc");
   var h_abstract = document.querySelector(".abstract.holder-desc");
   var b_job = document.querySelector(".job.holder-desc");
-  var b_usage_container = document.querySelector(".holder-container.tech");
+  var b_usage_container = document.querySelector(".usage.holder-title");
   var b_method = document.querySelector(".method.holder-desc");
   var r_rate = document.querySelector(".rate.holder-desc");
   var r_earned = document.querySelector(".earned.holder-desc");

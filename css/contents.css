@@ -1,14 +1,20 @@
-body{    
-    margin: 0;  
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-h1, h3, p{
+h1,
+h3,
+p {
     margin: 0;
 }
 
 h4 {
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 a {
@@ -25,55 +31,90 @@ p {
     width: 100%;
     background-color: black;
     color: white;
-    font-size: 2em;
+    font-size: 2rem;
     box-sizing: content-box;
-    padding: 4vh 0 4vh 0; 
+    padding: 4vh 0 4vh 0;
 
     z-index: 5;
     transition: 0.2s;
 }
 
-#header>.py, #header>.works{
-    color: white; 
+#header>.py,
+#header>.works {
+    color: white;
     max-width: 35%;
     padding-left: 17%;
     display: block;
     flex: 1;
 }
 
-.intro-holder, .body-holder, .result-holder {
+.intro-holder,
+.body-holder,
+.result-holder {
     margin-bottom: 5vh;
 }
 
-.main-container{  
-    /* display:flex;       */
-    font-size: 1.3rem;
-    height: 3000px;    
-    padding-top: 100px;
-    padding-left: 17%;
-    padding-right: 17%;    
-    background-color: white;
-}
+/* 헤드 콘테이너 */
 
 .head-container {
-    height: 60vh;
-    padding-top: 10vh;
-    background: no-repeat center/100% url("../img/coc_head.jpg");
+    width: auto;
+    height: 100vh;
+    border: red 2px solid;
+}
+
+.contents-banner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    filter: brightness(30%);
     position: relative;
+    /* background-image: no-repeat top/110% ; */
+}
+
+.contents-banner > img {
+    /* border: red solid 5px; */
+    width: 100%;
+    height: auto; 
+    max-height: 100%;
+    object-fit: cover;
+    object-position: top;   
+}
+
+.contents-text {
+    margin-left: 17%;
+    margin-right: 17%;
+    position: relative;
+    bottom: 50%;
+    color: white;
 }
 
 .contents.title {
-    margin-left: 17%;
-    margin-bottom: 5%;
-    position: absolute;
-    bottom: 0;
-    
-    font-size: 3rem;
-    font-weight: 800;    
-    color: white;
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 3vh;
 }
+
+.contents.desc {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 170%;
+}
+
+
+/* 메인 콘테이너 */
+.main-container {
+    /* display:flex;       */
+    font-size: 1.3rem;
+    height: 3000px;
+    padding-top: 100px;
+    padding-left: 17%;
+    padding-right: 17%;
+    background-color: white;
+}
+
 .holder-container {
-    display:flex;
+    display: flex;
     flex-direction: column;
     margin-bottom: 30px;
 }
@@ -84,7 +125,7 @@ p {
     padding-right: 30%;
 }
 
-.holder-title {    
+.holder-title {
     font-weight: 600;
 }
 
@@ -93,14 +134,35 @@ p {
     margin-right: 50px;
 }
 
-.tech>.holder-desc {
-    display: flex;
-    margin-top: 5px;
-    margin-bottom: 10px;
+/* 요약 */
+
+.abstract.holder-desc.imges {
+    border: solid red 1px;
+    /* display: flex;
+    flex-direction: row; */
 }
 
-.intro-title, .body-title, .result-title {
-    font-size: 2rem;
+.holder-img > .img {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    background-color: gray;
+}
+
+
+.tech > .holder-title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.usage.holder-desc {
+    display: flex;
+    flex-direction: row;
+}
+
+:is(.intro-title, .body-title, .result-title) {
+    font-size: 2.5rem;
     margin-bottom: 30px;
 }
 
@@ -118,5 +180,5 @@ p {
 }
 
 .tech-item.desc {
-    
+    flex-shrink: 1;
 }
