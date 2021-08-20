@@ -70,10 +70,14 @@ p {
 }
 
 .contents-text {
+    display: flex;
+    flex-direction: column;
+
     margin-left: 17%;
     margin-right: 17%;
-    position: relative;
-    bottom: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 20%;
     color: white;
 }
 
@@ -91,6 +95,7 @@ p {
 
 @media screen and (max-width: 1000px) {
     .contents-text {
+        
         margin-left: 5%;
         margin-right: 5%;
     }
