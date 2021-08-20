@@ -44,8 +44,10 @@ a {
 }
 
 @media screen and (max-width: 1080px) {
-    #header>.py, #header>.works {
+    
+    #header>.py {
         max-width: 80%;
+        padding-left: 3%;
     }
 }
 
