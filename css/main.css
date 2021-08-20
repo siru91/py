@@ -1,6 +1,12 @@
 body{    
     margin: 0;  
     font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+}
+@media screen and (max-height: 1080) {
+    body {
+        font-size: 13px;
+    }
 }
 
 h1, h3, p{
@@ -35,6 +41,12 @@ a {
     padding-left: 17%;
     display: block;
     flex: 1;
+}
+
+@media screen and (max-width: 1080px) {
+    #header>.py, #header>.works {
+        max-width: 80%;
+    }
 }
 
 #header>.divider {
