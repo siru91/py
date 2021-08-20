@@ -14,6 +14,7 @@ body {
 p {
     margin-top: 10px;
 }
+
 /* 
 #header {
     position: fixed;
@@ -45,7 +46,8 @@ p {
 /* 헤드 콘테이너 */
 
 .head-container {
-    width: auto;
+    overflow-x: hidden;
+    width: 100%;
     height: 100vh;
     border: red 2px solid;
 }
@@ -95,40 +97,39 @@ p {
 
 @media screen and (max-width: 1000px) {
     .contents-text {
-        
+
         margin-left: 5%;
         margin-right: 5%;
     }
-    
+
     .contents.title {
         font-size: 3em;
         font-weight: 800;
         margin-bottom: 3vh;
     }
-    
+
     .contents.desc {
         font-size: 1em;
         font-weight: 500;
         line-height: 170%;
     }
-    
+
     .head-container {
         height: 90vh;
     }
-    
+
     .contents-banner>img {
-        width: auto;     
+        width: auto;
     }
 }
-
 
 
 /* 메인 콘테이너 */
 .main-container {
     /* display:flex;       */
     font-size: 1.3em;
-    height: 3000px;
-    padding-top: 10em;
+    height: auto;
+    padding-top: 3em;
     padding-left: 17%;
     padding-right: 17%;
     background-color: white;
@@ -137,7 +138,7 @@ p {
 .holder-container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 3em;
 }
 
 #horizontal-mul {
@@ -147,12 +148,13 @@ p {
 }
 
 .holder-title {
-    font-weight: 600;
+    font-weight: 800;
+    margin-bottom: 0.15em;
 }
 
 .holder-desc {
     margin-left: 1px;
-    margin-right: 50px;
+    margin-right: 2em;
 }
 
 @media screen and (max-width: 1000px) {
@@ -162,12 +164,13 @@ p {
         padding-right: 5%;
     }
 
-#horizontal-mul {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 30%;
-}
+    #horizontal-mul {
+        display: inline;
+    }
 
+    .holder-desc {
+        margin-right: 0;
+    }
 }
 
 /* 요약 */
@@ -198,8 +201,10 @@ p {
 }
 
 :is(.intro-title, .body-title, .result-title) {
-    font-size: 2.5em;
-    margin-bottom: 30px;
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-top: 3em;
+    margin-bottom: 1em;
 }
 
 .tech-item {
@@ -217,4 +222,17 @@ p {
 
 .tech-item.desc {
     flex-shrink: 1;
+}
+
+@media screen and (max-width: 1000px) {
+    .holder-container {
+        margin-bottom: 0.8em;
+    }
+
+    :is(.intro-title, .body-title, .result-title) {
+        font-size: 1.3em;
+        font-weight: 800;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
 }
