@@ -2,19 +2,19 @@ body {
     font-size: 18px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1080px) {
     body {
-        font-size: 13px;
+        font-size: 15px;
     }
 }
 
 
 .item-cell>strong {    
-    font-size: 1.7rem;
-    font-weight: 700;
+    font-size: 1.7em;
+    font-weight: 1000;
 }
 .item-cell>em {    
-    font-size: 1.1rem;
+    font-size: 1.1em;
 }
 
 .main-container{  
@@ -37,6 +37,7 @@ body {
 .category {
     float: left;
     width: 100%;
+    margin-bottom: 5vh;
 }
 
 .item-container .category .item-cell {
@@ -44,6 +45,12 @@ body {
     float: left;
     width: 50%;
 }
+@media screen and (max-width: 1080px) {
+    .item-container .category .item-cell {
+        width: 90%;
+    }
+}
+
 
 .item-container .category .item-cell:nth-child(n) {
     padding-left: 1.5%;
@@ -51,22 +58,24 @@ body {
 }
 
 .category-title-bg {
-    width: 30%;
+    width: 40%;
     background-color: black;
+    margin-bottom: 2vh;
 }
 
 @media screen and (max-width: 1080px) {
     
     .category-title-bg {
-        width: 90%;
+        width: 70%;
         background-color: black;
+        margin-bottom: 2vh;
     }
 }
 .category-title {
-    font-size: 3rem;
+    font-size: 3em;
     font-weight: 800;
-    padding-inline-start: 1rem;
-    padding-block-end: 0.2rem;
+    padding-inline-start: 1em;
+    padding-block-end: 0.2em;
     margin-bottom: 8px;
     color: white;
 }   
