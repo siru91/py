@@ -95,7 +95,7 @@ p {
     line-height: 170%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
     .contents-text {
 
         margin-left: 5%;
@@ -157,7 +157,7 @@ p {
     margin-right: 2em;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
     .main-container {
         padding-top: 2em;
         padding-left: 5%;
@@ -224,7 +224,7 @@ p {
     flex-shrink: 1;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
     .holder-container {
         margin-bottom: 0.8em;
     }

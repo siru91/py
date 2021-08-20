@@ -2,8 +2,6 @@
 function init() {
 
   // setPageText(getIndex());
-
-  setTitleNavigation("Works");
 }
 
 function getIndex() {
